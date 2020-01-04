@@ -129,7 +129,7 @@ class InAppWebViewOptions
   bool disableHorizontalScroll;
 
   InAppWebViewOptions(
-      {this.useShouldOverrideUrlLoading = false,
+      {this.useShouldOverrideUrlLoading = true,
       this.useOnLoadResource = false,
       this.useOnDownloadStart = false,
       this.clearCache = false,
@@ -449,7 +449,7 @@ class AndroidInAppWebViewOptions
       this.thirdPartyCookiesEnabled = true,
       this.hardwareAcceleration = true,
       this.initialScale = 0,
-      this.supportMultipleWindows = false,
+      this.supportMultipleWindows = true,
       this.regexToCancelSubFramesLoading});
 
   @override

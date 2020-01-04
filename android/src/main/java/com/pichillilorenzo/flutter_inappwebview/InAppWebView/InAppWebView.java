@@ -567,7 +567,7 @@ final public class InAppWebView extends InputAwareWebView {
     settings.setJavaScriptCanOpenWindowsAutomatically(options.javaScriptCanOpenWindowsAutomatically);
     settings.setBuiltInZoomControls(options.builtInZoomControls);
     settings.setDisplayZoomControls(options.displayZoomControls);
-    settings.setSupportMultipleWindows(options.supportMultipleWindows);
+    settings.setSupportMultipleWindows(true);
 
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
       settings.setSafeBrowsingEnabled(options.safeBrowsingEnabled);
@@ -1013,7 +1013,7 @@ final public class InAppWebView extends InputAwareWebView {
         settings.setMixedContentMode(newOptions.mixedContentMode);
 
     if (newOptionsMap.get("supportMultipleWindows") != null && options.supportMultipleWindows != newOptions.supportMultipleWindows)
-      settings.setSupportMultipleWindows(newOptions.supportMultipleWindows);
+      settings.setSupportMultipleWindows(true);
 
     if (newOptionsMap.get("useOnDownloadStart") != null && options.useOnDownloadStart != newOptions.useOnDownloadStart) {
       if (newOptions.useOnDownloadStart) {

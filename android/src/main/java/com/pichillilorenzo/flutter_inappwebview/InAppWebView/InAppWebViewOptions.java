@@ -81,7 +81,7 @@ public class InAppWebViewOptions extends Options {
   public Boolean saveFormData = true;
   public Boolean thirdPartyCookiesEnabled = true;
   public Boolean hardwareAcceleration = true;
-  public Boolean supportMultipleWindows = false;
+  public Boolean supportMultipleWindows = true;
   public String regexToCancelSubFramesLoading;
 
   @Override
